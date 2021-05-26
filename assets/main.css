@@ -1,0 +1,68 @@
+#center {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+  h1::before {
+    content: "\2713";
+    color: black;
+  }
+  h1 {
+    font-size: 22px!important;
+  }
+  .small-header {
+    font-size: 15px;
+    line-height: 1;
+    margin-left: 12px;
+  }
+  P {
+    color: #777;
+    line-height: 22px;
+  }
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+  ol {
+    list-style: none;
+  }
+  li {
+    font-size: 15px;
+    color: #777;
+    line-height: 22px;
+  
+  }
+  .dot::before {
+    content: "....................................................";
+  }
+  
+  .project {
+    display: block;
+  }
+  .pre {
+    opacity: 0.9;
+    margin-left: 0px;
+    font-size: 10px;
+    color: #000;
+    margin-bottom: -12px;
+  }
+  .project-title {
+    font-size: 16px;
+    margin-bottom: 3px;
+    font-weight: 400;
+    margin-top: 14px;
+  }
+  .project-subheader {
+    font-size: 15px;
+    line-height: 1;
+    color: lightseagreen;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .dot::before {
+      content: "......................."
+    }
+  }
