@@ -1,0 +1,20 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "keywords": [],
+  "author": "lablnet",
+  "license": "GPL-3",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-nunjucks": "^5.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-url-builder": "^1.0.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}

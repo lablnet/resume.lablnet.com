@@ -1,0 +1,137 @@
+{% extends '_partials/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <p class="small-header text">Hello, this is</p>
+      <h1 class="h1">{{ name|safe }}</h1>
+      <p class="small-header text text-uppercase">{{ title|safe }}</p>
+      <p>{{ sub_title|safe }}</p> 
+      <p>
+        {{ email|safe }} <br />
+      </p>
+      {% if(phone)  %}
+      <p>
+        {{ phone|safe }} <br />
+      </p>
+      {% endif %}
+    </div>
+    <div class="col-md-6">
+      <img class="image rounded-circle" src={{profile_url}} />
+    </div>
+  </div>
+  <div class="row">
+    <h1>About</h1>
+    <p class="small-header" style="line-height: 1.5;">
+      {{ description|safe }}
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mt-4">
+      <h1>Languages:</h1>
+      <ol>
+        {% for language in languages %}
+          <li>{{ language.name|safe }} <span class="dot"></span> {{ language.subtitle|safe }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="col-md-6 mt-4">
+      <h1>Tools/Environment:</h1>
+      <ol>
+        {% for tool in tools %}
+          <li>{{ tool.name|safe }} <span class="dot"></span> {{ tool.subtitle|safe }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+
+  <div class="col mt-5">
+    <h1>Work Experience</h1>
+    {% for work in workExperiences %}
+      <div class="project mt-5">
+        <p class="small-header pre">{{ work.year|safe }}</p>
+        <h2 class="project-title">{{ work.company|safe }}</h2>
+        <p class="project-subheader">{{ work.role|safe }}
+            {% if (work.offerLetter) %} 
+            <a href="{{work.offerLetter}}">Offer Letter</a>
+            {% endif %}
+            {% if (work.terminationCertificate) %} 
+            <a href="{{work.terminationCertificate}}">Termination Certificate</a>
+            {% endif %}
+          </p>
+        <p>
+          {{ work.description|safe }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="col mt-5">
+    <h1>Projects</h1>
+    {% for project in projects %}
+      <div class="project mt-5">
+        <p class="small-header pre">{{ project.year|safe }}</p>
+        <h2 class="project-title">{{ project.name|safe }}</h2>
+        <p class="project-subheader">{{ project.shortheading|safe }}
+            {% if (project.app) %} 
+            <a href="{{project.app}}">Mobile App</a>
+            {% endif %}
+            {% if (project.web) %} 
+            <a href="{{project.web}}">Web App</a>
+            {% endif %}
+            {% if (project.app) %} 
+            <a href="{{project.desktop}}">Dektop App</a>
+            {% endif %}
+            {% if (project.code) %} 
+            <a href="{{project.code}}">Source Code</a>
+            {% endif %}
+          </p>
+        <p>
+          {{ project.description|safe }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="col mt-4">
+    <h1>Educations</h1>
+    {% for education in educations %}
+    <div class="project mt-4">
+      <p class="small-header pre">{{ education.year|safe }}</p>
+      <h2 class="project-title">{{ education.school|safe }}</h2>
+      <p class="project-subheader">{{ education.program|safe }}</p>
+      <p>
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="col mt-4">
+    <h1>Hobbies</h1>
+    <div class="project mt-4">
+      <h2 class="project-title">{{ hobbies.title|safe }}</h2>
+      <p class="project-subheader">{{ hobbies.subtitle|safe }}</p>
+      <p>
+        {{ hobbies.description|safe }}
+      </p>
+    </div>
+  </div>
+
+  <div class="col mt-4">
+    <h1>Interests</h1>
+    <div class="project mt-4">
+      <h2 class="project-title">Area of interests?</h2>
+      <ol>
+        {% for interest in interests %}
+          <li>{{ interest.title|safe }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</div>
+{% endblock %}
