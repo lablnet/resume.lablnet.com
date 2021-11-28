@@ -156,6 +156,14 @@ exports.projects = [
 ]
 
 exports.workExperiences = [
+    {
+    year: "Dec 2020 - Present",
+    company: "Freelancer at Upwork",
+    role: "Software Developer",
+    offerLetter: null,
+    terminationCertificate: null,
+    description: null,
+  },
   {
     year: "Nov 2019 - April 2020",
     company: "Overstep BPO",
