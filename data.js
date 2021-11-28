@@ -4,7 +4,7 @@ exports.sub_title = "CEO at <a href='https://alphasofthub.com'><b>AlphaSoftHub P
 exports.description = "Since the age of 15 yr(s) i have been in computer programming and computer related tasks. <br/> I love to solve problems using computations. I have worked on different projects throughout the years. I have expertise in different computer programming languages and problem solving that includes C++, Python, Dart, PHP etc. Beside all these I am also interested in deep learning, algorithm implementation, kernel, compilers, computer vision etc."
 exports.email = 'mumerfarooqlablnet01@gmail.com'
 exports.phone = null
-exports.profile_url = "https://i.imgur.com/AptkNDm.jpg"
+exports.profile_url = "https://imgpile.com/images/U35jng.jpg"
 
 exports.languages = [
   {
@@ -170,7 +170,7 @@ exports.educations = [
   {
     year: "2020-2024",
     school: "Riphah International University",
-    program: "BSSE CGPA - 4",
+    program: "BSSE CGPA - 3.87",
   },
   {
     year: "2017-2019",
