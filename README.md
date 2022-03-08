@@ -1,6 +1,6 @@
  [![Web Build and Deploy](https://github.com/alphasofthub/resume/actions/workflows/build.yaml/badge.svg)](https://github.com/lablnet/resume/workflows/build.yaml)
 
-https://lablnet.github.io/resume/
+https://resume.lablnet.com/
 
 # My Resume
 _powered by [AlphaSoftHub Resume](https://github.com/alphasofthub/resume)_
