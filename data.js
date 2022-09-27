@@ -1,6 +1,6 @@
 exports.name = 'Muhammad Umer Farooq'
 exports.title = "Software Enginner"
-exports.sub_title = "CEO at <a href='https://alphasofthub.com'><b>AlphaSoftHub Pvt Ltd.</b></a>"
+exports.sub_title = "<a href='https://lablnet.com'><b>https://lablnet.com</b></a>"
 exports.description = "Since the age of 15 yr(s) i have been in computer programming and computer related tasks. <br/> I love to solve problems using computations. I have worked on different projects throughout the years. I have expertise in different computer programming languages and problem solving that includes C++, Python, Dart, PHP etc. Beside all these I am also interested in deep learning, algorithm implementation, kernel, compilers, computer vision etc."
 exports.email = 'mumerfarooqlablnet01@gmail.com'
 exports.phone = null
